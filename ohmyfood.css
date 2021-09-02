@@ -1,14 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: shrikhand;
-  src: url("Polices/Shrikhand/Shrikhand-Regular.ttf");
-}
-
-@font-face {
-  font-family: roboto;
-  src: url("Polices/Roboto/Roboto-Regular.ttf") url("polices/roboto/Roboto-Bold.ttf");
-}
-
 /*Commun à toutes les pages*/
 body {
   margin: auto;
@@ -459,8 +449,6 @@ h2 {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   background-color: white;
-  width: 100%;
-  padding: 0 0 0 1rem;
   margin-bottom: 1rem;
   border: 5px grey;
   border-radius: 15px;
@@ -472,7 +460,7 @@ h2 {
 
 .menu .info1 .intitulé, .menu .info2 .intitulé, .menu .info3 .intitulé {
   width: 100%;
-  font-size: 1rem;
+  padding-left: 1rem;
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
@@ -487,25 +475,21 @@ h2 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  font-size: 1rem;
+  padding-bottom: 0.2rem;
 }
 
 .menu .info1 .prix strong, .menu .info2 .prix strong, .menu .info3 .prix strong {
   padding: 0 1rem 0 1rem;
 }
 
-.menu .info1 .chekbox, .menu .info2 .chekbox, .menu .info3 .chekbox {
-  margin: 0;
+.menu .info1 .jauge, .menu .info2 .jauge, .menu .info3 .jauge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
-.menu .info1 .chekbox .jauge, .menu .info2 .chekbox .jauge, .menu .info3 .chekbox .jauge {
-  width: 0;
-  height: 100%;
-  display: block;
-  position: relative;
-}
-
-.menu .info1 .chekbox .jauge .jauge-remplissage4, .menu .info2 .chekbox .jauge .jauge-remplissage4, .menu .info3 .chekbox .jauge .jauge-remplissage4 {
+.menu .info1 .jauge .jauge-remplissage4, .menu .info2 .jauge .jauge-remplissage4, .menu .info3 .jauge .jauge-remplissage4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,33 +499,26 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 0.1s linear 0s;
-  transition: all 0.1s linear 0s;
+  -webkit-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
-  width: 0;
+  width: 0%;
   height: 100%;
-  position: absolute;
   right: 0;
   top: 0;
 }
 
-.menu .info1 .chekbox .jauge .jauge-remplissage4 i, .menu .info2 .chekbox .jauge .jauge-remplissage4 i, .menu .info3 .chekbox .jauge .jauge-remplissage4 i {
+.menu .info1 .jauge .jauge-remplissage4 i, .menu .info2 .jauge .jauge-remplissage4 i, .menu .info3 .jauge .jauge-remplissage4 i {
   display: none;
   color: white;
 }
 
-.menu .info1:focus .jauge, .menu .info2:focus .jauge, .menu .info3:focus .jauge {
-  -webkit-transition: all 0.5s linear 0s;
-  transition: all 0.5s linear 0s;
-  width: 60px;
+.menu .info1 .jauge:focus .jauge-remplissage4, .menu .info2 .jauge:focus .jauge-remplissage4, .menu .info3 .jauge:focus .jauge-remplissage4 {
+  width: 30%;
 }
 
-.menu .info1:focus .jauge .jauge-remplissage4, .menu .info2:focus .jauge .jauge-remplissage4, .menu .info3:focus .jauge .jauge-remplissage4 {
-  width: 100%;
-}
-
-.menu .info1:focus .jauge .jauge-remplissage4 i, .menu .info2:focus .jauge .jauge-remplissage4 i, .menu .info3:focus .jauge .jauge-remplissage4 i {
+.menu .info1 .jauge:focus .jauge-remplissage4 i, .menu .info2 .jauge:focus .jauge-remplissage4 i, .menu .info3 .jauge:focus .jauge-remplissage4 i {
   display: contents;
   display: block;
   font-size: 1.25rem;
