@@ -73,6 +73,7 @@ body{
       i{
         &.far{
           background-clip: text;
+          -webkit-background-clip: text;
           color: transparent;
           background-image: linear-gradient(to top right, #FF79DA, #9356DC);
           transition: 1s;
@@ -182,7 +183,7 @@ footer{
       font-weight: normal;
       font-size: 0.9rem;
       background-color: #9356dc;
-      padding: 0.15rem 0.4rem 0.15rem 0.4rem;
+      padding: 0.15rem 0.5rem 0.15rem 0.5rem;
       margin-left: -0.5rem;
       border-radius: 100%;
     }
@@ -192,7 +193,6 @@ footer{
     }
     p{
       padding: 1rem 0 1rem 0;
-      text-decoration-style: none;
       color: black;
     }
     :hover{

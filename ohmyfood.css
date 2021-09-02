@@ -124,6 +124,7 @@ body .coeur i {
 
 body .coeur:focus i.far {
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   background-image: -webkit-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to top right, #FF79DA, #9356DC);
@@ -251,7 +252,7 @@ h2 {
   font-weight: normal;
   font-size: 0.9rem;
   background-color: #9356dc;
-  padding: 0.15rem 0.4rem 0.15rem 0.4rem;
+  padding: 0.15rem 0.5rem 0.15rem 0.5rem;
   margin-left: -0.5rem;
   border-radius: 100%;
 }
@@ -263,8 +264,6 @@ h2 {
 
 .fonctionnement__nav p {
   padding: 1rem 0 1rem 0;
-  -webkit-text-decoration-style: none;
-          text-decoration-style: none;
   color: black;
 }
 
