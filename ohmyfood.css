@@ -123,7 +123,6 @@ body .coeur i {
 }
 
 body .coeur:focus i.far {
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   background-image: -webkit-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));

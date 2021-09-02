@@ -72,7 +72,6 @@ body{
     &:focus{
       i{
         &.far{
-          background-clip: text;
           -webkit-background-clip: text;
           color: transparent;
           background-image: linear-gradient(to top right, #FF79DA, #9356DC);
