@@ -1,0 +1,14 @@
+.bouton{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    background-image: linear-gradient(to bottom right, $secondaire, $primaire);
+    background-color: $primaire;
+    border: 5px grey;
+    border-radius: 25px;
+    box-shadow: 0.25rem 0.25rem 0.25rem lightgrey;
+    &:hover{
+    box-shadow: 0.5rem 0.5rem 0.5rem lightgrey;
+    opacity: 0.9;
+  }
+}

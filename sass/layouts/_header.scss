@@ -1,0 +1,15 @@
+header{
+  display: flex;
+  justify-content: center;
+  .logo{
+    width: 10rem;
+    padding: 1rem 0 1rem 0;
+  }
+  .fas{
+    position: absolute;
+    left: 0;
+    color: black;
+    font-size: 1.25rem;
+    padding: 1.25rem 0 1.25rem 1rem;
+  }
+}

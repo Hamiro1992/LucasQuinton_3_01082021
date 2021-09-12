@@ -1,0 +1,18 @@
+body{
+    margin: auto;
+    height: fit-content;
+    h2, .name, span{
+        font-weight: 800;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    img{
+        object-fit: cover;
+    }
+    button{
+        cursor: pointer;
+        font-size: 1rem;
+    }
+}

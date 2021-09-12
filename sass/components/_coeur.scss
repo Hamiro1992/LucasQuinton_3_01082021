@@ -1,0 +1,21 @@
+.coeur{
+    border-style: none;
+    border-radius: 15px;
+    background-color: transparent;
+    i{
+        margin: 1rem;
+        font-size: 2rem;
+    }
+    &:focus{
+        i{
+            &.far{
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            background-image: linear-gradient(to top right, $secondaire, $primaire);
+            transition: 1s;
+            font-weight: 900;
+            }
+        }
+    }
+}

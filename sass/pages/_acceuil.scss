@@ -1,0 +1,69 @@
+.section1{
+    padding: 1rem 0 1rem 0;
+    margin-top: -1rem;
+    text-align: center;
+    .localisation{
+        padding: 1rem 0 1rem 0;
+        background-color: #eaeaea;
+        box-shadow: inset 0 0.2rem 0.15rem lightgrey;
+        i{
+        margin-right: 1rem;
+        }
+    }
+    .section1__presentation{
+        padding: 1rem 1rem 3rem 1rem;
+        background-color: #f6f6f6;
+        p{
+            padding-bottom: 1rem;
+        }
+    }
+}
+.fonctionnement{
+    padding-bottom: 2rem;
+}
+    h2{
+        margin-left: 1rem;
+    }
+    .fonctionnement__nav{
+        background-color: #f6f6f6;
+        border-radius: 15px;
+        box-shadow: 0.25rem 0.25rem 0.25rem lightgrey;
+        margin: 1rem;
+        span{
+            color: white;
+            font-weight: normal;
+            font-size: 0.9rem;
+            background-color: $primaire;
+            padding: 0.15rem 0.5rem 0.15rem 0.5rem;
+            margin-left: -0.5rem;
+            border-radius: 100%;
+        }
+    i{
+        padding: 0 2rem 0 1rem;
+        color: grey;
+    }
+    p{
+        padding: 1rem 0 1rem 0;
+        color: black;
+    }
+    :hover{
+        background-color: #f5edff;
+        border-radius: 15px;
+        i{
+            color: $primaire;
+        }
+        span{
+            background-color: $primaire;
+        }
+    }
+}
+.restaurants{
+    background-color: #f6f6f6;
+    padding: 1rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h2{
+      margin: 1rem;
+    }
+}

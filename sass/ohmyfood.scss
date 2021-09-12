@@ -1,0 +1,122 @@
+@import "./utils/variables";
+@import "./utils/animations";
+@import "./base/polices";
+@import "./base/normes";
+@import "./components/bouton";
+@import "./components/coeur";
+@import "./layouts/loader";
+@import "./layouts/header";
+@import "./layouts/bloc_resto";
+@import "./layouts/footer";
+@import "./pages/acceuil";
+@import "./pages/restaurants";
+
+/*Adaptation desktop*/
+
+@media screen and (min-width: 1024px){
+
+/*Commun à toutes les pages*/
+
+  button{
+    &:hover{
+      transform: scale(1.05);
+      transition: 0.3s ease-in-out;
+    }
+  }
+  footer{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    p{
+      font-size: 1.7rem;
+    }
+    a{
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+
+/*Fin*/
+
+/*Page d'accueil*/
+
+  main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .section1{
+      width: 100%;
+    }
+    .fonctionnement{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: -1rem;
+      .bloc_fonctionnement__nav{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        .fonctionnement__nav{
+          width: 30%;
+          p{
+            margin: 0.1rem 0 0.1rem 0;
+          }
+        }
+      }
+    }
+    .restaurants{
+      width: 100%;
+      text-align: center;
+      margin-bottom: -1rem;
+      .all_bloc_resto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: start;
+        .bloc_resto{
+          width: 20%;
+          &:hover{
+            transform: scale(1.05);
+            transition: 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+
+/*Fin*/
+
+/*Pages restaurants*/
+
+.header-menu{
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 2;
+}
+main{
+  display: flex;
+  justify-content: center;
+  .img_vitrine{
+    width: 100%;
+    img{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .menu{
+    width: 50%;
+    opacity: 0.9;
+    border-radius: 35px;
+    margin: 2rem 0 2rem 0;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/*Fin*/
+
+}

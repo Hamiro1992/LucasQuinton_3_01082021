@@ -1,0 +1,106 @@
+.img_vitrine{
+    img{
+        width: 100%;
+        height: 15rem;
+        margin-bottom: -3.5rem;
+    }
+}
+.menu{
+    padding: 0rem 1rem 1rem 1rem;
+    background-color: #f6f6f6;
+    border: 5px grey;
+    border-radius: 35px 35px 0 0;
+    position: relative;
+    z-index: 1;
+    h1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: -2rem;
+        i{
+            padding-bottom: 1rem;
+        }
+    }
+    .service{
+        text-transform: uppercase;
+        border-bottom: solid 3.5px $tertiaire;
+        padding-bottom: 0.5rem;
+        margin: 3rem 0 1rem 0;
+        width: 2.7rem;
+    }
+    .info1{
+        animation: apparition 0.5s forwards;
+        animation-delay: 0.5s;
+    }
+    .info2{
+        animation: apparition 0.5s forwards;
+        animation-delay: 1.5s;
+    }
+    .info3{
+        animation: apparition 0.5s forwards;
+        animation-delay: 2.5s;
+    }
+    .info1, .info2, .info3{
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: white;
+        margin-bottom: 1rem;
+        border: 5px grey;
+        border-radius: 15px;
+        box-shadow: 0.25rem 0.25rem 0.25rem lightgrey;
+        overflow: hidden;
+        opacity: 0;
+        .intitulé{
+            width: 100%;
+            padding-left: 1rem;
+            text-align: left;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.5rem;
+        }
+        .prix{
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 0.2rem;
+            strong{
+                padding: 0 1rem 0 1rem;
+            }
+        }
+        .jauge{
+            display: flex;
+            width: 100%;
+            .jauge-remplissage4 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.5s linear 0s;
+                background-color: $tertiaire;
+                border-radius: 0 15px 15px 0;
+                width: 0%;
+                height: 100%;
+                right: 0;
+                top: 0;  
+                i{
+                    display: none;
+                    color: white;
+                }
+            }
+            &:focus{
+                .jauge-remplissage4{
+                    width: 30%;
+                    i{
+                        display: contents;
+                        display: block;
+                        font-size: 1.25rem;
+                        animation: rotation 0.5s forwards;
+                    }
+                }
+            }
+        }
+    }
+    .bouton_commander{
+        text-align: center;
+        margin: 3.5rem 0 3rem 0;
+    }
+}

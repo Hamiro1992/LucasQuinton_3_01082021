@@ -1,0 +1,40 @@
+.bloc_resto{
+    background-color: white;
+    border: 5px grey;
+    border-radius: 15px;
+    box-shadow: 0.25rem 0.25rem 0.25rem lightgrey;
+    margin: 1rem;
+    .resto_img{
+      display: flex;
+      justify-content: flex-end;
+      img{
+        width: 100%;
+        height: 12rem;
+        border-radius: 15px 15px 0 0;
+      }
+      .nouveau{
+        position: absolute;
+        background-color: $tertiaire;
+        color: $nouveau;
+        font-weight: bold;
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        margin: 1rem;
+      }
+    }
+    .bloc_resto__footer{
+      display: flex;
+      a{
+        width: 100%;
+        padding-left: 1rem;
+        .descriptif{
+          .name{
+            margin-bottom: 0.5rem;
+          }
+          .lieu{
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+  }
