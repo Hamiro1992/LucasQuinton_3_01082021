@@ -3,22 +3,37 @@ footer{
     color: white;
     margin: -1rem 0 -1rem 0;
     p{
-      padding: 1.5rem 0 0 1.5rem;
+        padding: 1.5rem 0 0 1.5rem;
     }
     ul{
-      padding: 0 0 2rem 1.5rem;
-      li{
-        list-style: none;
-        padding-bottom: 0.25rem;
-        a{
-          color: white;
+        padding: 0 0 2rem 1.5rem;
+        li{
+            list-style: none;
+            padding-bottom: 0.25rem;
+            a{
+                color: white;
+            }
+            .fa-hands-helping{
+                font-size: 0.65rem;
+            }
         }
-        .fa-hands-helping{
-          font-size: 0.65rem;
+        i{
+            padding-right: 1rem;
         }
-      }
-      i{
-        padding-right: 1rem;
-      }
     }
-  }
+}
+@media screen and (min-width: 1024px){
+    footer{
+        width: 100%;
+        position: relative;
+        text-align: center;
+        p{
+            font-size: 1.7rem;
+        }
+        a{
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

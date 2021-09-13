@@ -1,6 +1,7 @@
 .img_vitrine{
     img{
         width: 100%;
+        max-width: 2000px;
         height: 15rem;
         margin-bottom: -3.5rem;
     }
@@ -102,5 +103,33 @@
     .bouton_commander{
         text-align: center;
         margin: 3.5rem 0 3rem 0;
+    }
+}
+@media screen and (min-width: 1024px){
+    .header-menu{
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 2;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        .img_vitrine{
+          width: 100%;
+            img{
+                position: fixed;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .menu{
+            width: 50%;
+            opacity: 0.9;
+            border-radius: 35px;
+            margin: 2rem 0 2rem 0;
+            position: relative;
+            z-index: 1;
+        }
     }
 }

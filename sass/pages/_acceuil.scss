@@ -67,3 +67,49 @@
       margin: 1rem;
     }
 }
+@media screen and (min-width: 1024px){
+    main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .section1{
+            width: 100%;
+        }
+        .fonctionnement{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-top: -1rem;
+            .bloc_fonctionnement__nav{
+                display: flex;
+                justify-content: space-evenly;
+                width: 100%;
+                .fonctionnement__nav{
+                    width: 30%;
+                    p{
+                        margin: 0.1rem 0 0.1rem 0;
+                    }
+                }
+            }
+        }
+        .restaurants{
+            width: 100%;
+            text-align: center;
+            margin-bottom: -1rem;
+            .all_bloc_resto{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                text-align: start;
+                .bloc_resto{
+                    width: 20%;
+                    &:hover{
+                        transform: scale(1.05);
+                        transition: 0.3s ease-in-out;
+                    }
+                 }
+            }
+        }
+    }
+}
